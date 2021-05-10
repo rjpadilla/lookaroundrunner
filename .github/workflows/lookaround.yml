@@ -15,7 +15,7 @@ jobs:
           sudo apt install tor openssh-server
           git clone https://github.com/treehouses/cli.git
           cd cli/
-          #sudo ./cli.sh tor add 22 
+          sudo ./cli.sh tor add 22 
           #sudo ./cli.sh tor notice now
           echo "shh only dreams"
           sleep 300
