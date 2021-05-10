@@ -1,0 +1,21 @@
+name: look around
+
+on: 
+  push: 
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: open seasame
+        run: |
+          sudo apt update  
+          sudo apt install tor npm openssh-server
+          sudo npm install @treehouses/cli 
+          sudo treehouses tor add 22 
+          sudo treehouses tor notice now
+          sleep 300
+          echo "done"
+            
