@@ -13,7 +13,7 @@ jobs:
         run: |
           sudo apt update  
           sudo apt install tor npm openssh-server
-          sudo npm install @treehouses/cli 
+          sudo npm install -g @treehouses/cli 
           sudo treehouses tor add 22 
           sudo treehouses tor notice now
           sleep 300
