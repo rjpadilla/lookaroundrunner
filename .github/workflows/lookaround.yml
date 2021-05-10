@@ -14,8 +14,7 @@ jobs:
           sudo apt update  
           sudo apt install tor openssh-server screen
           git clone https://github.com/treehouses/cli.git
-          sudo screen -dmS tor bash -c 'cd cli/; ./cli.sh tor add 22' 
-          #sudo ./cli.sh tor notice now
+          sudo screen -dmS tor bash -c 'cd cli/; ./cli.sh tor add 22; ./cli.sh tor notice now' 
           echo "shh only dreams"
           sleep 300
           echo "done"
