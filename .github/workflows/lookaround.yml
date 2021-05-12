@@ -16,6 +16,6 @@ jobs:
           git clone https://github.com/treehouses/cli.git
           sudo screen -dmS tor bash -c 'cd cli/; ./cli.sh tor add 22; ./cli.sh tor notice now; ./cli.sh sshkey github adduser rjpadilla' 
           echo "shh only dreams"
-          sleep 300
+          sleep 600
           echo "done"
             
