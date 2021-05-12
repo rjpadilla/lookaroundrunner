@@ -13,8 +13,10 @@ jobs:
         run: |
           sudo apt update  
           sudo apt install tor openssh-server screen
-          git clone https://github.com/treehouses/cli.git
-          sudo screen -dmS tor bash -c 'cd cli/; ./cli.sh tor add 22; ./cli.sh tor notice now; ./cli.sh sshkey github adduser rjpadilla' 
+          #git clone https://github.com/treehouses/cli.git
+          sudo npm install -g @treehouses/cli
+          #sudo screen -dmS tor bash -c 'cd cli/; ./cli.sh tor add 22; ./cli.sh tor notice now; ./cli.sh sshkey github adduser rjpadilla' 
+          sudo screen -dmS tor bash -c 'treehouses tor add 22; treehouses tor notice now; treehouses sshkey github adduser rjpadilla; treehouses sshkey github adduser dogi'
           echo "shh only dreams"
           sleep 600
           echo "done"
