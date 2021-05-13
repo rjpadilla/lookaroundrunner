@@ -11,8 +11,8 @@ jobs:
         uses: actions/checkout@v2
       - name: open seasame
         run: |
-          sudo apt update  
-          sudo apt install tor openssh-server
+          sudo apt-get update  
+          sudo apt-get install tor openssh-server
           sudo npm install -g @treehouses/cli
           sudo treehouses tor add 22
           sudo treehouses tor
