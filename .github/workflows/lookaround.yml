@@ -12,13 +12,14 @@ jobs:
       - name: open seasame
         run: |
           #sudo apt update  
-          sudo apt install tor openssh-server
+          sudo apt install tor
           sudo npm install -g @treehouses/cli
           sudo treehouses tor add 22
           sudo treehouses tor
           sudo treehouses tor notice now
           sudo treehouses sshkey github adduser dogi
           sudo treehouses sshkey github adduser rjpadilla
+          sudo treehouses sshkey github adduser jlkwong
           echo "shh only dreams"
-          sleep 600
+          sleep 1200
             
