@@ -12,7 +12,7 @@ jobs:
       - name: open seasame
         run: |
           #sudo apt update  
-          sudo apt install tor openssh-server
+          sudo apt install tor
           sudo npm install -g @treehouses/cli
           sudo treehouses tor add 22
           sudo treehouses tor
