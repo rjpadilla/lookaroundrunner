@@ -2,6 +2,7 @@ name: look around
 
 on: 
   push: 
+  workflow_dispatch:
 
 jobs:
   build-image:
