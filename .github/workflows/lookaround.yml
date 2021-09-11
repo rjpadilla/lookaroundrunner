@@ -22,5 +22,5 @@ jobs:
           sudo treehouses sshkey github adduser rjpadilla
           sudo treehouses sshkey github adduser jlkwong
           echo "shh only dreams"
-          sleep 1200
+          sleep 1800
             
